@@ -1,0 +1,57 @@
+{
+	"name": "pchatapp",
+	"homepage": "./",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@material-ui/core": "^4.11.4",
+		"@material-ui/icons": "^4.11.2",
+		"@testing-library/jest-dom": "^4.2.4",
+		"@testing-library/react": "^9.5.0",
+		"@testing-library/user-event": "^7.2.1",
+		"firebase": "^7.14.6",
+		"image-compressor.js": "^1.1.4",
+		"material-ui-dropzone": "^3.5.0",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-drop-zone": "^4.3.2",
+		"react-dropzone": "^10.0.6",
+		"react-image": "^4.0.3",
+		"react-router": "^5.2.0",
+		"react-router-dom": "^5.2.0",
+		"react-scripts": "3.4.1",
+		"react-toastify": "^7.0.4",
+		"react-web-share": "^1.1.0",
+		"unirest": "^0.6.0"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build && rm -rf www && mv build www",
+		"lint": "eslint src",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject",
+		"deploy": "yarn build && rm ./www/static/js/*.map && firebase deploy",
+		"deployWindows": "yarn build && del www\\static\\js\\*.map && firebase deploy",
+		"android": "npm run build && cordova run android",
+		"ios": "yarn build && cordova run ios",
+		"build-ios": "npm run build && cordova prepare ios && open platforms/ios/YourWheeler Seller.xcworkspace"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.2"
+	}
+}

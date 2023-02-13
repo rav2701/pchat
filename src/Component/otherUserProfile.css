@@ -1,0 +1,14 @@
+.otherhide-phone-number {
+    display: inline-block;
+    font-family: monospace, monospace;
+    position: relative;
+    font-size: 18px;
+  }
+  
+  .otherhide-phone-number::after {
+    content: "**-****";
+    background: white;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+  }

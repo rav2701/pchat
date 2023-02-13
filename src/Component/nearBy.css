@@ -1,0 +1,24 @@
+.nearBy .MuiListItemText-primary{
+    display: flex;
+    flex-direction: column;
+    font-family: monospace, monospace;
+    font-size: 18px;
+    position: relative;
+}
+.nearBy .MuiListItemText-primary::after {
+    content: "**-*****";
+    background: lightgrey;
+    position: absolute;
+    font-size: 18px;
+    left: 0;
+  }
+  .nearBy .MuiTypography-colorTextSecondary{    
+    position: relative;
+    font-size: 18px;
+    left: 0;
+  }
+  .nearBy .MuiTypography-colorTextSecondary::after{
+    position: relative;
+    font-size: 18px;
+    left: 0;
+  }

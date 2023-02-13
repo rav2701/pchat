@@ -1,0 +1,88 @@
+.profile .MuiGrid-root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.profile .MuiButton-label{
+    font-size: 12px;
+  }
+.profile.MuiButtonBase-root{
+    max-height: 50px;
+    margin: 20px;
+  }
+  .hide-phone-number {
+    display: inline-block;
+    font-family: monospace, monospace;
+    position: relative;
+    font-size: 18px;
+  }
+  
+  .hide-phone-number::after {
+    content: "**-****";
+    background: white;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+  }
+
+  .list.MuiButtonBase-root{
+    background: transparent;
+  }
+  .list .MuiListItemText-secondary{
+    width: 70px;
+    text-overflow: ellipsis;
+  }
+  /* .hide-mail-phone-number{
+    display: inline-block;
+    font-family: monospace, monospace;
+    font-size: 18px;
+    position: relative;
+  }
+  .hide-mail-phone-number::after {
+    content: "**-*****";
+    background: lightgrey;
+    position: absolute;
+    font-size: 18px;
+    left: 0;
+  } */
+  .profile .MuiListItemText-primary{
+    font-size: 0.8rem;
+    width: 55px;
+    overflow: hidden;
+    max-width: 55px;
+    text-overflow: ellipsis;
+  }
+  .profile .MuiListItem-container{
+    position: relative;
+    width: 100%;
+    max-width: 75%;
+  }
+  .profileDelete .MuiListItemSecondaryAction-root{
+    top: 80%;
+    right: 16px;
+    position: absolute;
+    transform: translateY(-50%);
+  }
+  .profileDone .MuiListItemSecondaryAction-root{
+    top: 15%;
+    right: 16px;
+    position: absolute;
+    transform: translateY(-50%);
+  }
+  .profile .MuiListItemText-secondary{
+    font-size: 0.6rem;
+    width: 110px;
+    text-overflow: ellipsis;
+  }
+.profile .MuiListItem-secondaryAction{
+  padding-right: 25px;
+}
+  .userNo .MuiGrid-root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 18px;
+}
